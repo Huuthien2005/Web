@@ -1,0 +1,157 @@
+* {
+  font-family: "Times New Roman", Times, serif;
+}
+body {
+  width: 80%;
+  margin: 0 auto;
+  border: 2px solid blue;
+}
+/* header */
+header {
+  display: flex;
+}
+header > div > img {
+  width: 100px;
+  display: block;
+}
+nav > ul > li > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  display: block;
+  padding: 0 5px;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  padding: 10px;
+  margin-right: auto;
+}
+nav > ul {
+  margin-right: auto;
+}
+/* images */
+section.images {
+  animation: doinen 10s ease-in-out infinite;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+section.images > img {
+  visibility: hidden;
+  width: 100%;
+}
+@keyframes doinen {
+  0% {
+    background-image: url(./car2.jpg);
+  }
+  25% {
+    background-image: url(./car4.jpg);
+  }
+  50% {
+    background-image: url(./car6.jpg);
+  }
+  75% {
+    background-image: url(./car1.jpg);
+  }
+}
+/* banner */
+h1 {
+  text-transform: uppercase;
+  color: aliceblue;
+  text-align: center;
+  padding: 15px;
+  margin: 10px;
+}
+section.banner {
+  background-color: orange;
+}
+/* content */
+h2.upper {
+  text-transform: uppercase;
+  color: gray;
+  text-align: center;
+  padding-bottom: 20px;
+}
+h2.upper::after {
+  content: " ";
+  height: 5px;
+  width: 5%;
+  display: block;
+  background-color: gray;
+  margin: 0 auto;
+}
+section.introduction > div > p {
+  text-align: center;
+  color: gray;
+  padding-bottom: 20px;
+}
+section.introduction > div {
+  padding-bottom: 10px;
+}
+/* advertising */
+/* section.items {
+  box-sizing: border-box;
+} */
+section.items > div > img {
+  max-width: 100%;
+}
+section.items > div {
+  padding: 10px;
+}
+div.item {
+  display: block;
+  background-color: lightgray;
+  margin: 10px;
+}
+section.items {
+  display: flex;
+}
+section.items > div > h3 {
+  text-align: center;
+  padding: 5px;
+}
+section.items > div > p {
+  text-align: center;
+}
+/* section_3 */
+div.img > img {
+  display: block;
+  width: 50%;
+}
+div.img {
+  display: flex;
+  flex-wrap: wrap;
+}
+section.data > div > ul > li {
+  text-decoration: none;
+  color: white;
+  font-size: 10px;
+}
+section.data > div > ul {
+  display: block;
+  list-style-type: none;
+  text-align: auto;
+  padding: 30px;
+  margin: auto;
+}
+section.data {
+  background-color: black;
+}
+section.data > div {
+  display: flex;
+  margin-top: 20px;
+}
+section.data > div > ul > li.main {
+  font-size: 60px !important;
+}
+/* event */
+div.event iframe {
+  width: 100%;
+}
+div.event {
+  width: 25%;
+}
+div.evts {
+  display: flex;
+  flex-wrap: wrap;
+}

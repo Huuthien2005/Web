@@ -1,0 +1,49 @@
+li a {
+  text-decoration: none;
+  color: white;
+}
+ul {
+  list-style: none;
+}
+h1 {
+  font-size: 15px;
+  text-align: center;
+}
+a:hover {
+  text-decoration: underline;
+}
+body {
+  color: #000;
+  font-family: Helvetica, sans-serif;
+  font-size: 15px;
+}
+div.intro {
+  display: block;
+}
+div.block > div {
+  display: block;
+}
+div.block {
+  display: flex;
+}
+div.social {
+  width: 165px;
+}
+div.intro {
+  width: 360px;
+}
+div.contact {
+  width: 260px;
+}
+div.infor {
+  width: 260px;
+}
+div.block > div {
+  margin: 0;
+  padding: 20px;
+}
+div.block {
+  background-color: #000;
+  color: white;
+  padding: 20px;
+}

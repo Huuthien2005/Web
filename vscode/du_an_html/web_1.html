@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DEMO</title>
+    <style>
+      div.item {
+        width: 50%;
+        background-color: lightblue;
+      }
+      div.item img {
+        width: 100%;
+        height: 100%;
+      }
+      div.thumb > div {
+        width: 20%;
+      }
+      div.thumb {
+        display: flex;
+      }
+    </style>
+    <script>
+      function changeImage(obj) {
+        var path = obj.src;
+        var img = document.getElementById("mainImg");
+        img.src = path;
+      }
+      function init() {
+        var images = document.querySelectorAll("div.thumb img");
+        for (var i = 0; i < images.length; i++)
+          images[i].onclick = function () {
+            changeImage(this);
+          };
+      }
+    </script>
+  </head>
+  <body onload="init()">
+    <h1>JAVASCRIPT</h1>
+    <div class="item">
+      <img src="/car1.jpg" id="mainImg" alt="car" />
+      <div class="thumb">
+        <div><img src="/car2.jpg" alt="1" /></div>
+        <div><img src="/car3.jpg" alt="2" /></div>
+        <div><img src="/car4.jpg" alt="3" /></div>
+        <div><img src="/car5.jpg" alt="4" /></div>
+        <div><img src="/car6.jpg" alt="5" /></div>
+        <div><img src="/car1.jpg" alt="6" /></div>
+      </div>
+    </div>
+  </body>
+</html>
